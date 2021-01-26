@@ -6,6 +6,8 @@ import {
   getPhotoUrl,
   getNextPage,
 } from "../../services/FlickUrlUtils";
+import styles from "./style.css";
+
 class FlickrApp extends HTMLElement {
   constructor() {
     super();
@@ -16,6 +18,7 @@ class FlickrApp extends HTMLElement {
 
     const shadowNodeRoot = this.attachShadow({ mode: "open" });
     shadowNodeRoot.appendChild(templateNode.content.cloneNode(true));
+    shadowNodeRoot.appendChild(styles);
 
     this.shadowDom = shadowNodeRoot;
     this.searchResultsComponent = this.shadowDom.querySelector(

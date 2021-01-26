@@ -40,3 +40,5 @@ Same goes for _HTML/CSS_. Everything should be written from scratch, that is, no
 ## Developer notes
 
 I took an approach for this problem using web components along with classes which was something that I never worked in the past, I found it quite useful also to reassure knowledge and have a deeper understading on how frameworks/libraries work under the hood.
+
+## Fix me => import styles
